@@ -6,25 +6,25 @@ const Experience = () => {
       name: "ResolveQ (Holkoi LLC), USA, Remote",
       role: "Software Developer",
       date: "Jul23 – Dec23",
-      desc: ' ●Spearheaded the research and implementation of a cost-effective and secure SSL certificate, achieving an 85% reduction in expenses. ● Optimized Java codebase by identifying and rectifying critical errors, enhancing overall efficiency.<br/>● Upgraded a legacy Gradle project from version 5 to a newer version to resolve build errors and address deprecated functionalities, enhancing the build efficiency and project maintainability.'
+      desc: ["Spearheaded the research and implementation of a cost-effective and secure SSL certificate, achieving an 85% reduction in expenses.","Optimized Java codebase by identifying and rectifying critical errors, enhancing overall efficiency.","Upgraded a legacy Gradle project from version 5 to a newer version to resolve build errors and address deprecated functionalities, enhancing the build efficiency and project maintainability."]
     },
     {
       name: "Pepper Content, India, Remote",
       role: "Senior DevOps Writer",
       date: "Jun22 – Jul22",
-      desc: "● Conducted in-depth research and authored the article comparing features, pros and cons, use cases, cost benefits, scalability, observability, and cardinality of InfluxDB and Thanos, with a focus on time-series data management.",
+      desc: ["Conducted in-depth research and authored the article comparing features, pros and cons, use cases, cost benefits, scalability, observability, and cardinality of InfluxDB and Thanos, with a focus on time-series data management."],
     },
     {
       name: "OmniTiim, USA, Remote",
       role: "DevOps Consultant",
       date: "Jul22 – Sep22",
-      desc: "● Developed and implemented the backend for an online video streaming service using Amazon Web Services, resulting in improved performance and user experience.● Deployed containers on Google Cloud Platform using the Cloud Run service, resulting in cost savings and increased serverless efficiency.● Constructed Terraform module to setup Ansible Tower in the Amazon Web Services cloud platform.",
+      desc: ["Developed and implemented the backend for an online video streaming service using Amazon Web Services, resulting in improved performance and user experience.","Deployed containers on Google Cloud Platform using the Cloud Run service, resulting in cost savings and increased serverless efficiency.","Constructed Terraform module to setup Ansible Tower in the Amazon Web Services cloud platform."],
     },
     {
       name: "Kickback Space, USA, Remote",
       role: "Software Engineer Intern",
       date: "Feb22 – Jun22 ",
-      desc: "● Collaborated on the platform API and generated scripts for authentication module, communication activities such as email, notifiers, user profile and invitation modules in Ruby.● Refactored error classes into modules to improve codebase organization & readability. ● Primed legacy code and improved naming conventions for error class names, keys and messages.",
+      desc: ["Collaborated on the platform API and generated scripts for authentication module, communication activities such as email, notifiers, user profile and invitation modules in Ruby.","Refactored error classes into modules to improve codebase organization & readability.","Primed legacy code and improved naming conventions for error class names, keys and messages."],
     },
   ];
   return (
@@ -58,7 +58,10 @@ const Experience = () => {
                           </div>
                         </div>
                         {/* <!-- Content --> */}
-                        <div class="text-slate-500">{item.desc}</div>
+                        <div class="text-slate-500">
+                          {item.desc.map((expr,i)=>(
+                              <li key={i}>{expr}</li>
+                          ))}</div>
                       </div>
                     </div>
                   </div>

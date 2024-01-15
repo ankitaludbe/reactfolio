@@ -6,7 +6,7 @@ const Experience = () => {
       name: "ResolveQ (Holkoi LLC), USA, Remote",
       role: "Software Developer",
       date: "Jul23 – Dec23",
-      desc: ` ●Spearheaded the research and implementation of a cost-effective and secure SSL certificate, achieving an 85% reduction in expenses.\n ● Optimized Java codebase by identifying and rectifying critical errors, enhancing overall efficiency.</br>● Upgraded a legacy Gradle project from version 5 to a newer version to resolve build errors and address deprecated functionalities, enhancing the build efficiency and project maintainability.`,
+      desc: ' ●Spearheaded the research and implementation of a cost-effective and secure SSL certificate, achieving an 85% reduction in expenses. ● Optimized Java codebase by identifying and rectifying critical errors, enhancing overall efficiency.<br/>● Upgraded a legacy Gradle project from version 5 to a newer version to resolve build errors and address deprecated functionalities, enhancing the build efficiency and project maintainability.'
     },
     {
       name: "Pepper Content, India, Remote",
@@ -29,8 +29,8 @@ const Experience = () => {
   ];
   return (
     <div name="exp" className="h-auto w-full bg-[#0a192f]">
-      <section className=" text-gray-300 px-5 py-32" id="projects">
-      <div className="  ">
+      <section className="bg-[#0a192f] text-gray-300 px-5 py-32" >
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
       <div className=' w-full flex justify-center items-center mb-7'>
               <p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center '>Professional Experience</p>
        </div>
@@ -39,7 +39,6 @@ const Experience = () => {
           {exp.map((item) => {
             return (
             //   w-full max-w-6xl mx-auto px-4 md:px-6 py-24
-              <div class="">
                 <div class="flex justify-center divide-y divide-slate-200 [&>*]:py-6">
                   <div class="w-full max-w-3xl mx-auto">
                     <div class="-my-6">
@@ -64,13 +63,13 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              
           
         );
           })}
         </div>
       </section>
-    </div>
+     </div>
   );
 };
 export default Experience;

@@ -23,7 +23,7 @@ const Home = () => {
         </p>
         <div>
           <Link
-            to="home"
+            to="skills"
             smooth
             duration={500}
             className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
@@ -35,13 +35,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      {/* <div>
-        <img
-          src={me}  
-          alt="my profile"
-          className="rounded-2xl mx-auto w-2/3 md:w-full"
-        />
-      </div> */}
     </div>
   </div>
   );

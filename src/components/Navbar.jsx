@@ -16,9 +16,10 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 // bg-[#0a192f]
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className='fixed z-10 w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
       <div>
-        <h1 className=' font-thin text-2xl italic font-serif'>GS</h1>
+          <Link className=' font-thin text-2xl italic font-serif' to='home' smooth={true}   duration={500}>GS</Link>
+        {/* <h1 className=' font-thin text-2xl italic font-serif'>GS</h1> */}
       </div>
       {/* menu */}
       <ul className='hidden md:flex gap-x-8'>

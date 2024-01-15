@@ -33,7 +33,7 @@ const Blog = () => {
               <p className='py-4 text-2xl'>Discover my concise and impactful blog collection</p>
           </div>
 
-        <div></div>
+        
       </div>
 
       <div className="projects container mx-auto grid md:grid-cols-2 gap-10 ">
